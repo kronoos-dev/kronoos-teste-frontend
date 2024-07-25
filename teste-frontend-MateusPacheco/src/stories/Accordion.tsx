@@ -35,7 +35,10 @@ export interface AccordionProps {
     */
     answer3?: string;
 }
-  
+
+/**
+ * Componente de acordeão que exibe diferentes informações ao clicar em cada item, neste caso usado como Perguntas frequentes (FAQ)
+*/
 export const Accordion = ({
     darkMode = false,
     question1,
