@@ -6,6 +6,7 @@ const meta = {
   title: 'Cookies',
   component: Cookies,
   parameters: {
+    padded: true,
   },
   argTypes: {
   },
@@ -19,23 +20,28 @@ type Story = StoryObj<typeof meta>;
 export const DarkMode: Story = {
   args: {
     darkMode: true,
+    label: 'Você aceita os cookies para que possamos melhorar o nosso site?'
   },
+};
+
+export const LightMode: Story = {
+  args: {
+    darkMode: false,
+    label: 'Você aceita os cookies para que possamos melhorar o nosso site?'
+  }
 };
 
 export const Fixed: Story = {
   args: {
     placement: 'fixed',
+    label: 'Você aceita os cookies para que possamos melhorar o nosso site?'
   },
 };
 
 export const Floating: Story = {
   args: {
     placement: 'floating',
+    label: 'Você aceita os cookies para que possamos melhorar o nosso site?'
   },
 };
 
-export const DarkModeFalse: Story = {
-  args: {
-    darkMode: false,
-  }
-};
