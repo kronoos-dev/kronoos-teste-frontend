@@ -34,7 +34,7 @@ export interface AccordionProps {
      * Definir a resposta 3
     */
     answer3?: string;
-};
+}
   
 export const Accordion = ({
     darkMode = false,

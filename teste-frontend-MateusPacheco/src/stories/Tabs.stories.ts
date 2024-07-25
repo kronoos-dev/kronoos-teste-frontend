@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Modal } from './Modal';
+import { Tabs } from './Tabs';
 
 const meta = {
-  title: 'Modal',
-  component: Modal,
+  title: 'Tabs',
+  component: Tabs,
   parameters: {
     layout: 'centered',
   },
   argTypes: {
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Modal>;
+} satisfies Meta<typeof Tabs>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -18,16 +18,20 @@ type Story = StoryObj<typeof meta>;
 export const DarkMode: Story = {
   args: {
     darkMode: true,
-    message: 'YouTube Video',
-    videoUrl: 'https://www.youtube.com/watch?v=Na0w3Mz46GA'
+    tab1: 'Tab 1',
+    tab2: 'Tab 2',
+    tab1Content: 'Conteúdo da aba 1',
+    tab2Content: 'Conteúdo da aba 2'
   },
 };
 
 export const LightMode: Story = {
   args: {
     darkMode: false,
-    message: 'YouTube Video',
-    videoUrl: 'https://www.youtube.com/watch?v=Na0w3Mz46GA'
+    tab1: 'Tab 1',
+    tab2: 'Tab 2',
+    tab1Content: 'Conteúdo da aba 1',
+    tab2Content: 'Conteúdo da aba 2'
   }
 };
 

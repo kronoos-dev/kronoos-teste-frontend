@@ -18,7 +18,7 @@ export interface CookiesProps {
    * Ao clicar no botão, o banner é fechado
    */
     onClick?: (setAccept: boolean) => void;
-};
+}
 
 /**
  * Componente que exibe um banner de aceitação de Cookies - LGPD
@@ -26,8 +26,7 @@ export interface CookiesProps {
 export const Cookies = ({
     darkMode = false,
     placement = 'fixed',
-    label,
-    ...props
+    label
 }: CookiesProps) => {
     
     const mode = darkMode ? 'bg-slate-800 text-white' : 'bg-slate-300 text-black';
